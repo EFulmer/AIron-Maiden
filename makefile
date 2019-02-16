@@ -1,8 +1,8 @@
 format:
-	echo TBD
+	black --line-length=79 --py36 --verbose tests/ scraper/ learner/
 
 style_check:
-	echo TBD
+	flake8 --max-line-length=79 --count --statistics -vvv tests/ scraper/ learner/
 
 install_travis:
 	pip install -r requirements.txt

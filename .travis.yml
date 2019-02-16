@@ -6,4 +6,5 @@ python:
 install:
   - make install_travis
 script:
+  - make style_check
   - make test
