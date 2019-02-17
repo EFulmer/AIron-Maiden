@@ -1,8 +1,8 @@
 format:
-	black --line-length=79 --py36 --verbose tests/ scraper/ learner/
+	black --line-length=79 --py36 --verbose tests/ scraper/ learner/ scripts/
 
 style_check:
-	flake8 --max-line-length=79 --count --statistics -vvv tests/ scraper/ learner/
+	flake8 --max-line-length=79 --count --statistics -vvv tests/ scraper/ learner/ scripts/
 
 install_travis:
 	pip install -r requirements.txt
