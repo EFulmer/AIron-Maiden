@@ -18,3 +18,6 @@ test_dev:
 
 test:
 	pytest --cov=scraper --cov=learner --cov-report=term -vvv tests/
+
+notebook:
+	jupyter-notebook --no-browser --notebook-dir=notebooks/
