@@ -35,6 +35,7 @@ def download_lyrics(api_key):
         #    (could use a library like tenacity for retrying logic)
         # 2. song titles with forward slashes on them will not be saved
         #    (we can figure out how to handle this too)
+	# 2.5 Since songs.save_lyrics tries to save all of them at once, if it fails due to issue 2, it won't try the ones after it. 
 		try:
 			songs = genius.search_artist(band, sort="popularity", max_songs=50)
 			try:
