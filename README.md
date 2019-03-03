@@ -1,7 +1,7 @@
-metal-lyrics-classifier
+AIron-Maiden
 =======================
 
-[![Build Status](https://travis-ci.com/EFulmer/metal-lyrics-classifier.svg?branch=master)](https://travis-ci.com/EFulmer/metal-lyrics-classifier)
+[![Build Status](https://travis-ci.com/EFulmer/AIron-Maiden.svg?branch=master)](https://travis-ci.com/EFulmer/AIron-Maiden)
 
 Classify lyrics of bands using a neural network!
 
