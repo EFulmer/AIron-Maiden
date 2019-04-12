@@ -4,6 +4,7 @@ Should be abstracted out to something that can dedupe, clean, and save
 the songs of a specified artist(s) to a specified directory in a
 future PR.
 """
+import os
 import sys
 import shutil
 import glob
