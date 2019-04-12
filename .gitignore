@@ -106,3 +106,6 @@ venv.bak/
 # lyrics
 data/*
 scripts/lyrics/*
+
+# internal testing file
+scripts/run_downloader.sh
