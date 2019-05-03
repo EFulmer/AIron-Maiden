@@ -12,7 +12,21 @@ import lyricsgenius
 
 
 def download_lyrics(api_key):
-    bands = ["Iron Maidendaklfgsakdl;fg"]
+    bands = [
+        "Iron Maiden",
+        "Black Sabbath",
+        "Blind Guardian",
+        "Judas Priest",
+        "Rainbow",
+        "Metallica",
+        "Motorhead",
+        "Megadeth",
+        "Manilla Road",
+        "Thin Lizzy",
+        "Led Zeppelin",
+        "Manowar",
+        "Dragonforce",
+    ]
 
     genius = lyricsgenius.Genius(api_key)
 
@@ -23,7 +37,7 @@ def download_lyrics(api_key):
         # 2. song titles with forward slashes on them will not be saved
         #    (we can figure out how to handle this too)
         try:
-            songs = genius.search_artist(band, sort="popularity", max_songs=1)
+            songs = genius.search_artist(band, sort="popularity", max_songs=50)
             try:
                 songs.save_lyrics(extension="txt")
             except Exception as song_save_exception:
