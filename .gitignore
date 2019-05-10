@@ -109,3 +109,9 @@ scripts/lyrics/*
 
 # internal testing file
 scripts/run_downloader.sh
+
+# secrets file
+secrets
+
+# testing directoryes
+tests/integration/data

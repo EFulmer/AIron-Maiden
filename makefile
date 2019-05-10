@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 format:
 	black --line-length=79 --py36 --verbose tests/ scraper/ learner/ scripts/
 
@@ -17,7 +19,7 @@ test_dev:
 	pytest --pdb --color=yes -vvv tests/
 
 test:
-	pytest --cov=scraper --cov=learner --cov-report=term -vvv tests/
+	$(shell cat secrets | xargs) pytest --cov=scraper --cov=learner --cov-report=term -s -vvv tests/
 
 notebook:
 	jupyter-notebook --no-browser --notebook-dir=notebooks/
